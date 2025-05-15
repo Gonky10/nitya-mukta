@@ -38,14 +38,14 @@
         <div class="max-w-7xl mx-auto px-4">
             <div class="flex justify-between items-center h-16">
                 <div class="flex items-center">
-                    <a href="/public/" class="text-2xl font-semibold text-primary">Centro nitya mukta</a>
+                    <a href="/" class="text-2xl font-semibold text-primary">Centro nitya mukta</a>
                 </div>
                 <!-- Menú de escritorio -->
                 <div class="hidden md:flex items-center space-x-4">
-                    <a href="/public/" class="text-primary hover:text-secondary">Inicio</a>
-                    <a href="/public/servicios" class="text-primary hover:text-secondary">Servicios</a>
-                    <a href="/public/nosotros" class="text-primary hover:text-secondary">Nosotros</a>
-                    <a href="/public/contacto" class="text-primary hover:text-secondary">Contacto</a>
+                    <a href="/" class="text-primary hover:text-secondary">Inicio</a>
+                    <a href="/servicios" class="text-primary hover:text-secondary">Servicios</a>
+                    <a href="/nosotros" class="text-primary hover:text-secondary">Nosotros</a>
+                    <a href="/contacto" class="text-primary hover:text-secondary">Contacto</a>
                 </div>
                 <!-- Botón de menú móvil -->
                 <div class="md:hidden">
@@ -58,9 +58,9 @@
             <div id="mobile-menu" class="hidden md:hidden pb-4">
                 <div class="flex flex-col space-y-4">
                     <a href="/" class="text-primary hover:text-secondary">Inicio</a>
-                    <a href="/public/servicios" class="text-primary hover:text-secondary">Servicios</a>
-                    <a href="/public/nosotros" class="text-primary hover:text-secondary">Nosotros</a>
-                    <a href="/public/contacto" class="text-primary hover:text-secondary">Contacto</a>
+                    <a href="/servicios" class="text-primary hover:text-secondary">Servicios</a>
+                    <a href="/nosotros" class="text-primary hover:text-secondary">Nosotros</a>
+                    <a href="/contacto" class="text-primary hover:text-secondary">Contacto</a>
                 </div>
             </div>
         </div>

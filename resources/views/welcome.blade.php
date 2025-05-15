@@ -8,7 +8,7 @@
             <div class="text-center text-white px-4">
                 <h1 class="text-4xl md:text-6xl font-bold mb-4">Centro nitya mukta</h1>
                 <p class="text-xl md:text-2xl mb-8">Tu espacio de sanación y crecimiento personal</p>
-                <a href="/public/contacto"
+                <a href="/contacto"
                     class="bg-secondary text-primary px-8 py-3 rounded-full hover:bg-white transition duration-300 font-semibold">
                     Reserva tu sesión
                 </a>
@@ -130,7 +130,7 @@
         <div class="max-w-7xl mx-auto px-4 text-center">
             <h2 class="text-3xl font-bold mb-4">Comienza tu viaje de transformación hoy</h2>
             <p class="text-xl mb-8 text-secondary">Todos nuestros servicios pueden pagarse hasta en 12 cuotas</p>
-            <a href="/public/contacto"
+            <a href="/contacto"
                 class="bg-white text-primary px-8 py-3 rounded-full hover:bg-secondary transition duration-300 font-semibold">
                 Agenda tu cita
             </a>
