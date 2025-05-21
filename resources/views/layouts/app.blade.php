@@ -275,6 +275,8 @@
             mobileMenu.addEventListener('click', closeMobileMenuOnClick);
         });
     </script>
+    @stack('styles')
+    @stack('scripts')
 </body>
 
 </html>
