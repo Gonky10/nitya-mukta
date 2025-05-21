@@ -369,6 +369,8 @@
                     touchRatio: 1,
                     touchAngle: 45,
                     resistance: true,
+                    passiveListeners: true,
+                    edgeSwipeDetection: true,
                     resistanceRatio: 0.85,
                     speed: 800,
                     grabCursor: true,
@@ -389,13 +391,19 @@
             initSwiper();
 
             // Escuchar cambios de tamaño de ventana
-            let resizeTimer;
+            let currentMode = window.innerWidth >= 1024 ? 'desktop' : 'mobile';
+
             window.addEventListener('resize', function() {
                 clearTimeout(resizeTimer);
                 resizeTimer = setTimeout(function() {
-                    initSwiper();
+                    const newMode = window.innerWidth >= 1024 ? 'desktop' : 'mobile';
+                    if (newMode !== currentMode) {
+                        currentMode = newMode;
+                        initSwiper(); // solo reinicia si cambió el modo
+                    }
                 }, 250);
             });
+
         });
     </script>
 @endpush
