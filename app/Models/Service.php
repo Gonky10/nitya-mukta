@@ -11,15 +11,22 @@ class Service extends Model
 
     protected $fillable = [
         'name',
+        'slug',
+        'subtitle',
         'description',
+        'image',
+        'benefits',
+        'gallery',
+        'testimonials',
         'price',
-        'image_url',
-        'type',
         'active'
     ];
 
     protected $casts = [
-        'price' => 'decimal:2',
-        'active' => 'boolean'
+        'benefits' => 'array',
+        'gallery' => 'array',
+        'testimonials' => 'array',
+        'active' => 'boolean',
+        'price' => 'decimal:2'
     ];
 }

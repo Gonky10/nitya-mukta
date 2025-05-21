@@ -11,10 +11,14 @@ return new class extends Migration
         Schema::create('services', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->text('description')->nullable();
-            $table->decimal('price', 10, 2);
-            $table->string('image_url')->nullable();
-            $table->string('type')->default('service'); // service o product
+            $table->string('slug')->unique();
+            $table->string('subtitle')->nullable();
+            $table->text('description');
+            $table->string('image');
+            $table->json('benefits')->nullable();
+            $table->json('gallery')->nullable();
+            $table->json('testimonials')->nullable();
+            $table->decimal('price', 10, 2)->nullable();
             $table->boolean('active')->default(true);
             $table->timestamps();
         });
