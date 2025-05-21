@@ -355,7 +355,7 @@
                         crossFade: true
                     },
                     autoplay: {
-                        delay: 5000,
+                        delay: 2000,
                         disableOnInteraction: false,
                     },
                     pagination: {
@@ -371,7 +371,17 @@
                     resistance: true,
                     resistanceRatio: 0.85,
                     speed: 800,
-                    grabCursor: true
+                    grabCursor: true,
+                    watchSlidesProgress: true,
+                    preventInteractionOnTransition: true,
+                    allowTouchMove: true,
+                    touchStartPreventDefault: false,
+                    touchMoveStopPropagation: false,
+                    shortSwipes: true,
+                    longSwipes: true,
+                    followFinger: true,
+                    threshold: 5,
+                    touchEventsTarget: 'container'
                 });
             }
 
