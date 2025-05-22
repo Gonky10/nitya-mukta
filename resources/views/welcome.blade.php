@@ -262,6 +262,10 @@
                 {
                     src: 'img/centro4.jpg',
                     alt: 'Centro Holístico'
+                },
+                {
+                    src: 'img/centro6.png',
+                    alt: 'Centro Holístico'
                 }
             ];
 
@@ -275,6 +279,10 @@
                 },
                 {
                     src: 'img/yoga/yoga_4.jpeg',
+                    alt: 'Centro Holístico'
+                },
+                {
+                    src: 'img/centro7.png',
                     alt: 'Centro Holístico'
                 }
             ];
