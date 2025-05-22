@@ -80,7 +80,7 @@
             <!-- Formulario de Contacto -->
             <div class="bg-white p-8 rounded-lg shadow-md">
                 <h2 class="text-2xl font-bold text-primary mb-6">Envíanos un Mensaje</h2>
-                <form action="/contacto" method="POST" class="space-y-6">
+                <form action="{{ route('contacto.enviar') }}" method="POST" class="space-y-6">
                     @csrf
                     <div>
                         <label for="nombre" class="block text-gray-700 font-medium mb-2">Nombre Completo</label>

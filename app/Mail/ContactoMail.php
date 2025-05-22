@@ -15,7 +15,7 @@ class ContactoMail extends Mailable
     /**
      * Create a new message instance.
      */
-    public function __construct(array $datos)
+    public function __construct($datos)
     {
         $this->datos = $datos;
     }

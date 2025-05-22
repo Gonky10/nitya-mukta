@@ -252,33 +252,26 @@
 
             // Configuración de imágenes para desktop y móvil
             const desktopImages = [{
-                    src: 'img/talleres/talleres_7.jpeg',
+                    src: 'img/centro11.png',
                     alt: 'Centro Holístico'
                 },
                 {
-                    src: 'img/yoga/yoga_3.jpeg',
+                    src: 'img/centro10.png',
                     alt: 'Centro Holístico'
                 },
                 {
                     src: 'img/centro4.jpg',
                     alt: 'Centro Holístico'
-                },
-                {
-                    src: 'img/centro6.png',
-                    alt: 'Centro Holístico'
                 }
+
             ];
 
             const mobileImages = [{
-                    src: 'img/talleres/talleres_2.jpeg',
+                    src: 'img/centro8.png',
                     alt: 'Centro Holístico'
                 },
                 {
-                    src: 'img/rito del utero/rito_2.jpeg',
-                    alt: 'Centro Holístico'
-                },
-                {
-                    src: 'img/yoga/yoga_4.jpeg',
+                    src: 'img/centro9.png',
                     alt: 'Centro Holístico'
                 },
                 {

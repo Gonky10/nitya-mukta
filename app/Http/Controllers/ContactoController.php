@@ -2,16 +2,15 @@
 
 namespace App\Http\Controllers;
 
-use App\Mail\ContactoMail;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
-use Illuminate\Support\Facades\Log;
+use App\Mail\ContactoMail;
 
 class ContactoController extends Controller
 {
-    public function store(Request $request)
+    public function enviarMensaje(Request $request)
     {
-        $datos = $request->validate([
+        $request->validate([
             'nombre' => 'required|string|max:255',
             'email' => 'required|email|max:255',
             'telefono' => 'nullable|string|max:20',
@@ -19,28 +18,16 @@ class ContactoController extends Controller
             'mensaje' => 'required|string',
         ]);
 
-        try {
-            Mail::to('yoganityamukta@gmail.com')
-                ->send(new ContactoMail($datos));
+        $datos = [
+            'nombre' => $request->nombre,
+            'email' => $request->email,
+            'telefono' => $request->telefono,
+            'servicio' => $request->servicio,
+            'mensaje' => $request->mensaje,
+        ];
 
-            Log::info('Correo de contacto enviado', [
-                'nombre' => $datos['nombre'],
-                'email' => $datos['email']
-            ]);
+        Mail::to('yoganityamukta@gmail.com')->send(new ContactoMail($datos));
 
-            return redirect()
-                ->back()
-                ->with('success', 'Mensaje enviado correctamente. Nos pondremos en contacto contigo pronto.');
-        } catch (\Exception $e) {
-            Log::error('Error al enviar correo de contacto', [
-                'error' => $e->getMessage(),
-                'datos' => $datos
-            ]);
-
-            return redirect()
-                ->back()
-                ->with('error', 'Lo sentimos, hubo un problema al enviar tu mensaje. Por favor, intenta nuevamente más tarde.')
-                ->withInput();
-        }
+        return redirect()->back()->with('success', '¡Gracias por tu mensaje! Nos pondremos en contacto contigo pronto.');
     }
 }

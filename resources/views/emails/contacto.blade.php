@@ -2,6 +2,8 @@
 <html>
 
 <head>
+    <meta charset="utf-8">
+    <title>Nuevo mensaje de contacto</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -16,17 +18,16 @@
         }
 
         .header {
-            background-color: #9d8266;
-            color: white;
+            background-color: #f8f9fa;
             padding: 20px;
             text-align: center;
-            border-radius: 5px 5px 0 0;
+            margin-bottom: 20px;
         }
 
         .content {
-            background-color: #f9f9f9;
+            background-color: #ffffff;
             padding: 20px;
-            border-radius: 0 0 5px 5px;
+            border: 1px solid #dee2e6;
         }
 
         .field {
@@ -35,7 +36,7 @@
 
         .label {
             font-weight: bold;
-            color: #9d8266;
+            color: #495057;
         }
     </style>
 </head>
@@ -43,31 +44,31 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1>Nuevo Mensaje de Contacto</h1>
+            <h2>Nuevo mensaje de contacto</h2>
         </div>
         <div class="content">
             <div class="field">
-                <p class="label">Nombre:</p>
+                <span class="label">Nombre:</span>
                 <p>{{ $datos['nombre'] }}</p>
             </div>
 
             <div class="field">
-                <p class="label">Email:</p>
+                <span class="label">Email:</span>
                 <p>{{ $datos['email'] }}</p>
             </div>
 
             <div class="field">
-                <p class="label">Teléfono:</p>
-                <p>{{ $datos['telefono'] ?? 'No proporcionado' }}</p>
+                <span class="label">Teléfono:</span>
+                <p>{{ $datos['telefono'] ?? 'No especificado' }}</p>
             </div>
 
             <div class="field">
-                <p class="label">Servicio de interés:</p>
+                <span class="label">Servicio de interés:</span>
                 <p>{{ $datos['servicio'] }}</p>
             </div>
 
             <div class="field">
-                <p class="label">Mensaje:</p>
+                <span class="label">Mensaje:</span>
                 <p>{{ $datos['mensaje'] }}</p>
             </div>
         </div>

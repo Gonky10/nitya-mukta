@@ -38,7 +38,7 @@ Route::get('/contacto', function () {
     return view('contacto');
 });
 
-Route::post('/contacto', [ContactoController::class, 'store']);
+Route::post('/contacto', [ContactoController::class, 'enviarMensaje'])->name('contacto.enviar');
 
 // Rutas protegidas por autenticación
 Route::middleware(['auth'])->group(function () {
