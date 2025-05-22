@@ -24,84 +24,47 @@
 
         <div class="absolute inset-0 flex items-center justify-center">
             <div class="text-center text-white px-4 z-10">
-                <h1 class="text-3xl lg:text-6xl font-bold mb-2 lg:mb-4">Centro nitya mukta</h1>
+                <h1 class="text-3xl lg:text-6xl font-bold mb-2 lg:mb-4">Escuela nitya mukta</h1>
                 <p class="text-lg lg:text-2xl mb-4 lg:mb-8">Tu espacio de sanación y crecimiento personal</p>
-                <a href="/contacto"
+                <a href="/servicios"
                     class="bg-secondary text-primary px-6 lg:px-8 py-2 lg:py-3 rounded-full hover:bg-white transition duration-300 font-semibold text-sm lg:text-base">
-                    Reserva tu sesión
+                    Que ofrecemos
                 </a>
             </div>
         </div>
     </div>
 
-    <!-- Servicios Section -->
+    <!-- Quiénes Somos Section -->
     <section class="py-16 bg-white">
         <div class="max-w-7xl mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-12 text-primary">Nuestros Servicios</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Coaching -->
-                <div class="bg-secondary bg-opacity-30 rounded-lg p-6 shadow-md hover:shadow-xl transition duration-300">
-                    <div class="text-primary text-4xl mb-4">
-                        <i class="fas fa-brain"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-2 text-primary">Coaching</h3>
-                    <p class="text-primary">Descubre tu verdadero potencial y alcanza tus metas a través de un proceso de
-                        transformación personal guiado. Nuestro coaching te ayuda a superar obstáculos y crear la vida que
-                        deseas.</p>
-                </div>
-
-                <!-- Reiki -->
-                <div class="bg-secondary bg-opacity-30 rounded-lg p-6 shadow-md hover:shadow-xl transition duration-300">
-                    <div class="text-primary text-4xl mb-4">
-                        <i class="fas fa-hands"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-2 text-primary">Reiki</h3>
-                    <p class="text-primary">Técnica de sanación energética que equilibra tus centros energéticos, promueve
-                        la relajación profunda y activa tu capacidad natural de autocuración física, mental y emocional.</p>
-                </div>
-
-                <!-- Rito del útero -->
-                <div class="bg-secondary bg-opacity-30 rounded-lg p-6 shadow-md hover:shadow-xl transition duration-300">
-                    <div class="text-primary text-4xl mb-4">
-                        <i class="fas fa-venus"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-2 text-primary">Rito del útero</h3>
-                    <p class="text-primary">Ceremonia sagrada de sanación ancestral que reconecta con la energía femenina,
-                        sana heridas transgeneracionales y restaura el poder creativo de tu centro sagrado femenino.</p>
-                </div>
-
-                <!-- Tarjeta cuántica -->
-                <div class="bg-secondary bg-opacity-30 rounded-lg p-6 shadow-md hover:shadow-xl transition duration-300">
-                    <div class="text-primary text-4xl mb-4">
-                        <i class="fas fa-infinity"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-2 text-primary">Tarjeta cuántica</h3>
-                    <p class="text-primary">Herramienta de transformación que utiliza la física cuántica para reprogramar
-                        patrones limitantes, atraer abundancia y manifestar tu realidad deseada a través de frecuencias
-                        específicas.</p>
-                </div>
-
-                <!-- Aromaterapia -->
-                <div class="bg-secondary bg-opacity-30 rounded-lg p-6 shadow-md hover:shadow-xl transition duration-300">
-                    <div class="text-primary text-4xl mb-4">
-                        <i class="fas fa-leaf"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-2 text-primary">Aromaterapia</h3>
-                    <p class="text-primary">Terapia holística que utiliza aceites esenciales puros para promover el
-                        bienestar físico, mental y emocional, armonizando cuerpo y mente a través de las propiedades
-                        curativas de las plantas.</p>
-                </div>
-
-                <!-- Mujer Sagrada -->
-                <div class="bg-secondary bg-opacity-30 rounded-lg p-6 shadow-md hover:shadow-xl transition duration-300">
-                    <div class="text-primary text-4xl mb-4">
-                        <i class="fas fa-moon"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-2 text-primary">Mujer Sagrada</h3>
-                    <p class="text-primary">Programa de empoderamiento femenino que honra los ciclos naturales, reconecta
-                        con la sabiduría ancestral y despierta el poder sagrado de la feminidad a través de rituales y
-                        enseñanzas antiguas.</p>
-                </div>
+            <h2 class="text-3xl font-bold text-center mb-12 text-primary">Quiénes Somos</h2>
+            <div class="prose prose-lg mx-auto text-primary">
+                <p class="mb-6" style="font-size: 1.5rem">
+                    Somos un grupo de profesionales de diferentes disciplinas comprometidos con el desarrollo personal,
+                    donde compartimos una mirada holística e integral respecto al ser humano.
+                </p>
+                <p class="mb-6" style="font-size: 1.5rem">
+                    Entendemos a las personas como una unidad entre diferentes dominios como son "Mente, Emociones, Cuerpo y
+                    Espíritu". Desde esta mirada comprendemos que el desbalance en cualquiera de esas áreas, produce un
+                    desequilibrio general que termina afectando a todas nuestras actividades, y relaciones. Comenzando, con
+                    la relación con "Nosotros mismos", y proyectándose hacia afuera en el resto de nuestros ámbitos. La
+                    alineación de estos 4 dominios principales, consideramos que es la clave para transitar el camino de
+                    nuestras vidas.
+                </p>
+                <p class="mb-6" style="font-size: 1.5rem">
+                    Desde Nitya Mukta te invitamos a transitar el camino del desarrollo de la conciencia, como medio de
+                    crecimiento personal, a través de las diferentes disciplinas que ofrecemos.
+                </p>
+                <p class="mb-6" style="font-size: 1.5rem">
+                    Desde este lugar, la historia de nuestra vida no nos define. Sino mas bien, es nuestro punto de partida
+                    en el camino, hacia una nueva forma de SER y ESTAR, que nos permite establecer relaciones sanas en
+                    entornos sanos y productivos. Nadie puede DAR lo que NO TIENE. Si no tengo PAZ, no puedo dar PAZ, si no
+                    tengo AMOR no puedo dar AMOR.
+                </p>
+                <p class="mb-6" style="font-size: 1.5rem">
+                    Por eso extendemos esta invitación a todas las personas que quieran transitar este camino. Nuestro
+                    compromiso es acompañarlos en el trayecto.
+                </p>
             </div>
         </div>
     </section>
@@ -147,10 +110,11 @@
     <section class="py-16 bg-primary text-white">
         <div class="max-w-7xl mx-auto px-4 text-center">
             <h2 class="text-3xl font-bold mb-4">Comienza tu viaje de transformación hoy</h2>
-            <p class="text-xl mb-8 text-secondary">Todos nuestros servicios pueden pagarse hasta en 12 cuotas</p>
-            <a href="/contacto"
+            <p class="text-xl mb-8 text-secondary">Todos nuestros servicios y productos pueden pagarse hasta en 12 cuotas
+            </p>
+            <a href="/servicios"
                 class="bg-white text-primary px-8 py-3 rounded-full hover:bg-secondary transition duration-300 font-semibold">
-                Agenda tu cita
+                Nuestros servicios
             </a>
         </div>
     </section>

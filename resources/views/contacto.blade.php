@@ -24,9 +24,9 @@
                         <div>
                             <h3 class="text-xl font-semibold mb-2">Ubicación</h3>
                             <p class="text-gray-600">
-                                Primer T.Manzotti 101<br>
-                                Pilar<br>
-                                12345
+                                Primer Teniente Manzotti 101,
+                                <br>
+                                Manzanares, Pilar
                             </p>
                         </div>
                     </div>
@@ -53,7 +53,7 @@
                             <h3 class="text-xl font-semibold mb-2">Email</h3>
                             <p class="text-gray-600">
                                 yoganityamukta@gmail.com<br>
-                                Respuesta en 24-48 horas
+                                Respuesta en 12-24 horas
                             </p>
                         </div>
                     </div>
@@ -63,13 +63,14 @@
                 <div class="mt-12">
                     <h3 class="text-xl font-semibold mb-4">Síguenos en Redes Sociales</h3>
                     <div class="flex space-x-4">
-                        <a href="#" class="text-primary hover:text-secondary text-2xl">
+                        <a href="https://www.facebook.com/nityamuktayoga" class="text-white hover:text-secondary text-2xl">
                             <i class="fab fa-facebook"></i>
                         </a>
-                        <a href="#" class="text-primary hover:text-secondary text-2xl">
+                        <a class="text-white hover:text-secondary text-2xl"
+                            href="https://www.instagram.com/escuelaholisticanitya/">
                             <i class="fab fa-instagram"></i>
                         </a>
-                        <a href="#" class="text-primary hover:text-secondary text-2xl">
+                        <a class="text-white hover:text-secondary text-2xl" href="https://wa.me/5491160399017">
                             <i class="fab fa-whatsapp"></i>
                         </a>
                     </div>

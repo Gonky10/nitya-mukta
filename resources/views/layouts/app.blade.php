@@ -219,7 +219,7 @@
         <div class="max-w-7xl mx-auto px-4 py-12">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div>
-                    <h3 class="text-xl font-semibold mb-4">Centro nitya mukta</h3>
+                    <h3 class="text-xl font-semibold mb-4">Escuela nitya mukta</h3>
                     <p class="text-secondary">Tu espacio de sanación y crecimiento personal</p>
                 </div>
                 <div>
@@ -227,22 +227,26 @@
                     <p class="text-secondary">
                         <i class="fas fa-phone mr-2"></i> 1160399017<br>
                         <i class="fas fa-envelope mr-2"></i> yoganityamukta@gmail.com<br>
-                        <i class="fas fa-map-marker-alt mr-2"></i> Primer T.Manzotti 101, Pilar
+                        <i class="fas fa-map-marker-alt mr-2"></i> Primer T.Manzotti 101, Manzanares, Pilar
                     </p>
                 </div>
                 <div>
                     <h3 class="text-xl font-semibold mb-4">Síguenos</h3>
                     <div class="flex space-x-4">
-                        <a href="#" class="text-white hover:text-secondary"><i
+                        <a href="https://www.facebook.com/nityamuktayoga" class="text-white hover:text-secondary"><i
                                 class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="text-white hover:text-secondary"><i
-                                class="fab fa-instagram"></i></a>
-                        <a href="#" class="text-white hover:text-secondary"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.instagram.com/escuelaholisticanitya/"
+                            class="text-white hover:text-secondary text-2xl">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://wa.me/5491160399017" class="text-white hover:text-secondary text-2xl">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
                     </div>
                 </div>
             </div>
             <div class="mt-8 pt-8 border-t border-secondary text-center">
-                <p class="text-secondary">&copy; 2024 Centro nitya mukta. Todos los derechos reservados.</p>
+                <p class="text-secondary">&copy; 2024 Escuela nitya mukta. Todos los derechos reservados.</p>
             </div>
         </div>
     </footer>

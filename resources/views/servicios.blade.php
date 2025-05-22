@@ -4,7 +4,7 @@
     <!-- Hero Section -->
     <div class="relative h-[50vh] overflow-hidden">
         <div class="absolute inset-0">
-            <img src="{{ asset('img/centro2.png') }}" alt="Centro Holístico" class="w-full h-full object-cover">
+            <img src="{{ asset('img/centro5.png') }}" alt="Centro Holístico" class="w-full h-full object-cover">
             <div class="absolute inset-0 bg-gradient-to-b from-black/60 to-black/40"></div>
         </div>
         <div class="absolute inset-0 flex items-center justify-center">
