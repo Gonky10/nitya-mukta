@@ -27,113 +27,50 @@
     <section class="py-16 bg-white">
         <div class="max-w-7xl mx-auto px-4">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Coaching -->
-                <a href="{{ route('servicios.coaching') }}" class="group">
-                    <div
-                        class="bg-secondary bg-opacity-30 rounded-lg p-6 shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
-                        <div class="text-primary text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">
-                            <i class="fas fa-brain"></i>
-                        </div>
-                        <h3 class="text-xl font-semibold mb-2 text-primary">Coaching Ontologico</h3>
-                        <p class="text-primary">Descubre tu verdadero potencial y alcanza tus metas a través de un proceso
-                            de transformación personal guiado.</p>
+                @foreach ($services as $service)
+                    <a href="{{ route('servicios.show', ['slug' => $service->slug]) }}" class="group">
                         <div
-                            class="mt-4 text-primary flex items-center group-hover:translate-x-2 transition-transform duration-300">
-                            <span class="mr-2">Conoce más</span>
-                            <i class="fas fa-arrow-right"></i>
-                        </div>
-                    </div>
-                </a>
+                            class="bg-secondary bg-opacity-30 rounded-lg p-6 shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                            <div class="text-primary text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">
+                                @switch($service->slug)
+                                    @case('coaching')
+                                        <i class="fas fa-brain"></i>
+                                    @break
 
-                <!-- Reiki -->
-                <a href="{{ route('servicios.reiki') }}" class="group">
-                    <div
-                        class="bg-secondary bg-opacity-30 rounded-lg p-6 shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
-                        <div class="text-primary text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">
-                            <i class="fas fa-hands"></i>
-                        </div>
-                        <h3 class="text-xl font-semibold mb-2 text-primary">Reiki</h3>
-                        <p class="text-primary">Técnica de sanación energética que equilibra tus centros energéticos y
-                            promueve la relajación profunda.</p>
-                        <div
-                            class="mt-4 text-primary flex items-center group-hover:translate-x-2 transition-transform duration-300">
-                            <span class="mr-2">Conoce más</span>
-                            <i class="fas fa-arrow-right"></i>
-                        </div>
-                    </div>
-                </a>
+                                    @case('reiki')
+                                        <i class="fas fa-hands"></i>
+                                    @break
 
-                <!-- Rito del útero -->
-                <a href="{{ route('servicios.rito-utero') }}" class="group">
-                    <div
-                        class="bg-secondary bg-opacity-30 rounded-lg p-6 shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
-                        <div class="text-primary text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">
-                            <i class="fas fa-venus"></i>
-                        </div>
-                        <h3 class="text-xl font-semibold mb-2 text-primary">Rito del útero</h3>
-                        <p class="text-primary">Ceremonia sagrada de sanación ancestral que reconecta con la energía
-                            femenina y sana heridas transgeneracionales.</p>
-                        <div
-                            class="mt-4 text-primary flex items-center group-hover:translate-x-2 transition-transform duration-300">
-                            <span class="mr-2">Conoce más</span>
-                            <i class="fas fa-arrow-right"></i>
-                        </div>
-                    </div>
-                </a>
+                                    @case('rito-utero')
+                                        <i class="fas fa-venus"></i>
+                                    @break
 
-                <!-- Tarjeta cuántica -->
-                <a href="{{ route('servicios.tarjeta-cuantica') }}" class="group">
-                    <div
-                        class="bg-secondary bg-opacity-30 rounded-lg p-6 shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
-                        <div class="text-primary text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">
-                            <i class="fas fa-infinity"></i>
-                        </div>
-                        <h3 class="text-xl font-semibold mb-2 text-primary">Tarjeta cuántica</h3>
-                        <p class="text-primary">Herramienta de transformación que utiliza la física cuántica para
-                            reprogramar patrones limitantes.</p>
-                        <div
-                            class="mt-4 text-primary flex items-center group-hover:translate-x-2 transition-transform duration-300">
-                            <span class="mr-2">Conoce más</span>
-                            <i class="fas fa-arrow-right"></i>
-                        </div>
-                    </div>
-                </a>
+                                    @case('tarjeta-cuantica')
+                                        <i class="fas fa-infinity"></i>
+                                    @break
 
-                <!-- Aromaterapia -->
-                <a href="{{ route('servicios.aromaterapia') }}" class="group">
-                    <div
-                        class="bg-secondary bg-opacity-30 rounded-lg p-6 shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
-                        <div class="text-primary text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">
-                            <i class="fas fa-leaf"></i>
-                        </div>
-                        <h3 class="text-xl font-semibold mb-2 text-primary">Aromaterapia</h3>
-                        <p class="text-primary">Terapia holística que utiliza aceites esenciales puros para promover el
-                            bienestar físico, mental y emocional.</p>
-                        <div
-                            class="mt-4 text-primary flex items-center group-hover:translate-x-2 transition-transform duration-300">
-                            <span class="mr-2">Conoce más</span>
-                            <i class="fas fa-arrow-right"></i>
-                        </div>
-                    </div>
-                </a>
+                                    @case('aromaterapia')
+                                        <i class="fas fa-leaf"></i>
+                                    @break
 
-                <!-- Mujer Sagrada -->
-                <a href="{{ route('servicios.mujer-sagrada') }}" class="group">
-                    <div
-                        class="bg-secondary bg-opacity-30 rounded-lg p-6 shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
-                        <div class="text-primary text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">
-                            <i class="fas fa-moon"></i>
+                                    @case('mujer-sagrada')
+                                        <i class="fas fa-moon"></i>
+                                    @break
+
+                                    @default
+                                        <i class="fas fa-star"></i>
+                                @endswitch
+                            </div>
+                            <h3 class="text-xl font-semibold mb-2 text-primary">{{ $service->name }}</h3>
+                            <p class="text-primary">{{ $service->subtitle }}</p>
+                            <div
+                                class="mt-4 text-primary flex items-center group-hover:translate-x-2 transition-transform duration-300">
+                                <span class="mr-2">Conoce más</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
                         </div>
-                        <h3 class="text-xl font-semibold mb-2 text-primary">Mujer Sagrada</h3>
-                        <p class="text-primary">Programa de empoderamiento femenino que honra los ciclos naturales y
-                            reconecta con la sabiduría ancestral.</p>
-                        <div
-                            class="mt-4 text-primary flex items-center group-hover:translate-x-2 transition-transform duration-300">
-                            <span class="mr-2">Conoce más</span>
-                            <i class="fas fa-arrow-right"></i>
-                        </div>
-                    </div>
-                </a>
+                    </a>
+                @endforeach
             </div>
         </div>
     </section>

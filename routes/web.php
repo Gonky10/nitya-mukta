@@ -8,6 +8,7 @@ use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ServiceController;
+use App\Http\Controllers\ServicioController;
 
 // Rutas de autenticación
 Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
@@ -22,13 +23,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/servicios', [ServiceController::class, 'index'])->name('servicios.index');
-Route::get('/servicios/coaching', [ServiceController::class, 'coaching'])->name('servicios.coaching');
-Route::get('/servicios/reiki', [ServiceController::class, 'reiki'])->name('servicios.reiki');
-Route::get('/servicios/rito-utero', [ServiceController::class, 'ritoUtero'])->name('servicios.rito-utero');
-Route::get('/servicios/tarjeta-cuantica', [ServiceController::class, 'tarjetaCuantica'])->name('servicios.tarjeta-cuantica');
-Route::get('/servicios/aromaterapia', [ServiceController::class, 'aromaterapia'])->name('servicios.aromaterapia');
-Route::get('/servicios/mujer-sagrada', [ServiceController::class, 'mujerSagrada'])->name('servicios.mujer-sagrada');
+Route::get('/servicios', [ServicioController::class, 'index'])->name('servicios.index');
+Route::get('/servicios/{slug}', [ServicioController::class, 'show'])->name('servicios.show');
 
 Route::get('/nosotros', function () {
     return view('nosotros');
