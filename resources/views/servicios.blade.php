@@ -34,7 +34,7 @@
                         <div class="text-primary text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">
                             <i class="fas fa-brain"></i>
                         </div>
-                        <h3 class="text-xl font-semibold mb-2 text-primary">Coaching</h3>
+                        <h3 class="text-xl font-semibold mb-2 text-primary">Coaching Ontologico</h3>
                         <p class="text-primary">Descubre tu verdadero potencial y alcanza tus metas a través de un proceso
                             de transformación personal guiado.</p>
                         <div

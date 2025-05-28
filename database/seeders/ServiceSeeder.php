@@ -11,21 +11,104 @@ class ServiceSeeder extends Seeder
     {
         $services = [
             [
-                'name' => 'Coaching Transformacional',
-                'slug' => 'coaching',
+                'name' => 'Taller Coaching ontologico',
+                'slug' => 'Taller Coaching ontologico',
                 'subtitle' => 'Descubre tu verdadero potencial y alcanza tus metas',
                 'description' => '<h2>¿Qué es el Coaching Transformacional?</h2>
                     <p>El Coaching Transformacional es un proceso de acompañamiento personalizado que te ayuda a descubrir tu verdadero potencial y alcanzar tus metas más significativas. A través de técnicas y herramientas especializadas, trabajamos juntos para identificar y superar obstáculos, desarrollar nuevas perspectivas y crear un plan de acción efectivo para tu crecimiento personal.</p>
-                    <h2>¿Cómo funciona?</h2>
-                    <p>Nuestro proceso de coaching se desarrolla en sesiones individuales donde:</p>
+                    
+                    <h2>Teoría del Observador</h2>
                     <ul>
-                        <li>Exploramos tus objetivos y aspiraciones más profundas</li>
-                        <li>Identificamos patrones limitantes y creencias que te impiden avanzar</li>
-                        <li>Desarrollamos estrategias personalizadas para superar obstáculos</li>
-                        <li>Creamos un plan de acción concreto y medible</li>
-                        <li>Te acompañamos en la implementación y seguimiento de tus metas</li>
-                    </ul>',
-                'image' => 'img/talleres/talleres_7.jpeg',
+                        <li>No quiero cambiar a nadie</li>
+                        <li>Ya sé que no tengo razón</li>
+                        <li>Entonces, dejo de hablar de los demás como la causa de los problemas</li>
+                        <li>Las relaciones interpersonales son la mejor escuela que existe</li>
+                        <li>Vemos en el otro lo que no podemos ver en nosotros mismos</li>
+                        <li>Son un espejo que nos muestra lo que tenemos in corpere</li>
+                    </ul>
+
+                    <h2>Caso 1: Situación que me incomode</h2>
+                    <p>Previo: Me convierto en observación - fenómeno de disociación. No Juicios. No hay buenos ni malos. Dejo de hablar del otro como la causa de mis problemas.</p>
+                    <ul>
+                        <li>¿Qué recibo yo de la otra persona? - proyección</li>
+                        <li>¿Qué quiero cambiar?</li>
+                    </ul>
+                    <p>Una vez que quedo atrapado en la percepción - estoy en un sueño. Somos un campo de conciencia, atrapado en otro campo de conciencia.</p>
+
+                    <h2>Caso 2: Realidad</h2>
+                    <p>Borh dijo: "Realidad es aquello que tomamos por verdad"</p>
+                    <ul>
+                        <li>Tomamos por verdad aquello que creemos</li>
+                        <li>Creemos aquello que podemos percibir, lo que implica que percibimos lo que creemos y creemos aquello que percibimos</li>
+                        <li>Lo que percibimos depende de lo que buscamos</li>
+                        <li>Lo que buscamos depende de lo que pensamos</li>
+                        <li>Pensamos en base a lo que percibimos, y percibimos aquello en lo que creemos</li>
+                        <li>Nuestras creencias determinan lo que tomamos por "VERDAD"</li>
+                        <li>Lo que tomamos por VERDAD es nuestra realidad</li>
+                    </ul>
+
+                    <h2>Caso 3: Las creencias son buenas o malas? - Sufrimiento</h2>
+                    <ul>
+                        <li>Son filtros a través de las cuales vemos al mundo</li>
+                        <li>Son la base de nuestras percepciones</li>
+                        <li>Para que un pensamiento se convierta en carne, hace falta una creencia</li>
+                        <li>Nunca estoy disgustado por la razón que creo</li>
+                        <li>El sufrimiento está siempre basado en una experiencia del pasado</li>
+                        <li>Tenemos que "Entender al otro" o simplemente Aceptarlo</li>
+                        <li>Tú eres el reflejo de lo que piensas diariamente</li>
+                    </ul>
+
+                    <h2>Caso 4: El observador que estoy siendo - Transfondo espiritual</h2>
+                    <ul>
+                        <li>Tenemos una mente Dual - Pensamos en términos de buena, malo, frío, caliente, lindo y feo</li>
+                        <li>Conciencia de unidad:
+                            <ul>
+                                <li>Somos un campo de conciencia, dentro de otros campos más grandes</li>
+                                <li>Todo es una ilusión</li>
+                            </ul>
+                        </li>
+                        <li>Mi forma de ver la vida es simplemente una interpretación - NO es la verdad
+                            <ul>
+                                <li>Esta interpretación está vinculada a nuestras creencias</li>
+                                <li>Las historias que me cuento tampoco son verdad</li>
+                            </ul>
+                        </li>
+                        <li>Yo no soy aquello que pienso que soy</li>
+                    </ul>
+
+                    <h2>¿Para qué sirve el Coaching Ontológico?</h2>
+                    <p>Expande las posibilidades de la persona, no solamente en la realización de una acción, sino también y quizá más importante aún, expande las capacidades de SER y de ESTAR.</p>
+                    <p>Es una disciplina que le posibilita al coachee, realizar un crecimiento de su SER, de su persona, para poder "ESTAR" presente en su propia vida, y de "SER" la persona que quiere ser.</p>
+
+                    <h2>Misión 2028</h2>
+                    <p>Nuestra propuesta de formación está acompañada y supervisada por la profesionalidad de los equipos de entrenadores y formadores, puestos en función en los procesos educativos, y totalmente funcionales al aprendizaje ontológico.</p>
+                    <ul>
+                        <li>Generamos líderes que se hagan cargo de sus vidas, y que sean contribuidores activos de una nueva sociedad.</li>
+                        <li>Contribuimos en el desarrollo sustentable del ecosistema social.</li>
+                    </ul>
+
+                    <h2>Objetivos Formativos y Profesionales</h2>
+                    <ul>
+                        <li>Desarrollar un estilo propio de liderazgo, con un perfil profesional con capacidad de respuesta ante los requerimientos y oportunidades de época.</li>
+                        <li>Transitar los entornos complejos que se presentan con decisión, firmeza y amplitud de criterio, sabiendo que en la diversidad está el desafío, pero también las respuestas que muchas veces no encontramos.</li>
+                        <li>Formar profesionales comprometidos, audaces que integren la diversidad para interactuar con un modelo de comunicación y facilitación de procesos, que atienda el cuidado de las personas y las relaciones.</li>
+                        <li>Que no pierdan de vista los objetivos propuestos, y gestionen apropiadamente los recursos para cumplir con las metas acordadas.</li>
+                    </ul>
+
+                    <h2>Formación</h2>
+                    
+                    <h3>Primer Año</h3>
+                    <p>En la primera parte del proceso formativo se presentan contenidos y prácticas relacionadas con el desarrollo personal, liderazgo y la metodología emergente de la facilitación profesional.</p>
+                    <ul>
+                        <li>El foco y compromiso se centra en el desarrollo personal para favorecer la expansión de consciencia del potencial humano, tanto individual como social.</li>
+                        <li>En esta amplitud de consciencia comienza un despliegue ontológico, esto es, del sentido existencial, en especial del crecimiento de la confianza personal, como así también la mejora de la calidad de relacionamiento en los distintos ámbitos del hacer propio y con otros.</li>
+                        <li>Completando el proceso del primer año con un abordaje integral de competencias para la facilitación de procesos de aprendizaje y gestión de personas, relaciones y equipos de trabajo en empresas y organizaciones.</li>
+                    </ul>
+
+                    <h3>Segundo Año</h3>
+                    <p>En la siguiente etapa de la formación, para certificar como Coach Ontológico y Facilitador Profesional, se aborda el conjunto de competencias que le posibilitan al futuro profesional crear contextos conversacionales desde una escucha comprometida y un hablar responsable y que le permitan hacerse cargo de acompañar a la persona que solicita los servicios de un Coach, a partir de sus compromisos y objetivos.</p>
+                    <p>El Coach, mediante la facilitación de un aprendizaje ontológico, invita a la persona asistida a transitar y experimentar procesos de darse cuenta y hacerse cargo dada sus elecciones y decisiones, siempre, con la aceptación de las realidades en las que vive y socializa y con los ojos en la posibilidad que inspira el compromiso con una manera de ser y hacer que le permita superar y trascender los límites o condiciones personales que le impiden llegar a los resultados buscados.</p>',
+                'image' => 'img/coaching/coaching3.png',
                 'benefits' => [
                     'Mayor claridad sobre tus objetivos y propósito de vida',
                     'Desarrollo de habilidades de liderazgo personal',
@@ -35,9 +118,9 @@ class ServiceSeeder extends Seeder
                     'Equilibrio entre vida personal y profesional'
                 ],
                 'gallery' => [
-                    'img/talleres/talleres_7.jpeg',
-                    'img/talleres/talleres_2.jpeg',
-                    'img/talleres/talleres_3.jpeg'
+                    'img/coaching/coaching1.png',
+                    'img/coaching/coaching2.png',
+                    'img/coaching/coaching3.png'
                 ],
                 'testimonials' => [
                     [

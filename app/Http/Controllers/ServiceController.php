@@ -34,7 +34,7 @@ class ServiceController extends Controller
 
     public function coaching()
     {
-        return $this->show('coaching');
+        return $this->show('Taller Coaching ontologico');
     }
 
     public function reiki()
