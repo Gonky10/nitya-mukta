@@ -16,6 +16,12 @@ class ServicioController extends Controller
     public function show($slug)
     {
         $service = Service::where('slug', $slug)->where('active', true)->firstOrFail();
+
+        // Si es coaching ontológico, usar la vista específica
+        if ($slug === 'coaching-ontologico') {
+            return view('servicios.coaching-ontologico', compact('service'));
+        }
+
         return view('servicios.detalle', compact('service'));
     }
 }

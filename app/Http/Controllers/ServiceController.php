@@ -19,22 +19,17 @@ class ServiceController extends Controller
             ->where('active', true)
             ->firstOrFail();
 
-        $data = [
-            'titulo' => $service->name,
-            'subtitulo' => $service->subtitle,
-            'imagen' => $service->image,
-            'descripcion' => $service->description,
-            'beneficios' => $service->benefits,
-            'galeria' => $service->gallery,
-            'testimonios' => $service->testimonials
-        ];
+        // Si es coaching ontológico, usar la vista específica
+        if ($slug === 'coaching-ontologico') {
+            return view('servicios.coaching-ontologico', compact('service'));
+        }
 
-        return view('servicios.detalle', $data);
+        return view('servicios.detalle', compact('service'));
     }
 
     public function coaching()
     {
-        return $this->show('Taller Coaching ontologico');
+        return $this->show('coaching-ontologico');
     }
 
     public function reiki()

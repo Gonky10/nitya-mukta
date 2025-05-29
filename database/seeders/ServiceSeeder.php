@@ -11,8 +11,8 @@ class ServiceSeeder extends Seeder
     {
         $services = [
             [
-                'name' => 'Taller Coaching ontologico',
-                'slug' => 'Taller Coaching ontologico',
+                'name' => 'Coaching Ontologico',
+                'slug' => 'coaching-ontologico',
                 'subtitle' => 'Descubre tu verdadero potencial y alcanza tus metas',
                 'description' => '<h2>¿Qué es el Coaching Transformacional?</h2>
                     <p>El Coaching Transformacional es un proceso de acompañamiento personalizado que te ayuda a descubrir tu verdadero potencial y alcanzar tus metas más significativas. A través de técnicas y herramientas especializadas, trabajamos juntos para identificar y superar obstáculos, desarrollar nuevas perspectivas y crear un plan de acción efectivo para tu crecimiento personal.</p>
