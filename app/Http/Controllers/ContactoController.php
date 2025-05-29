@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\ContactoMail;
+use Illuminate\Support\Facades\Log;
 
 class ContactoController extends Controller
 {
@@ -18,16 +19,13 @@ class ContactoController extends Controller
             'mensaje' => 'required|string',
         ]);
 
-        $datos = [
-            'nombre' => $request->nombre,
-            'email' => $request->email,
-            'telefono' => $request->telefono,
-            'servicio' => $request->servicio,
-            'mensaje' => $request->mensaje,
-        ];
+        try {
+            Mail::to('goncalvesnicolas1000@gmail.com')->send(new ContactoMail($request->all()));
 
-        Mail::to('yoganityamukta@gmail.com')->send(new ContactoMail($datos));
-
-        return redirect()->back()->with('success', '¡Gracias por tu mensaje! Nos pondremos en contacto contigo pronto.');
+            return redirect()->back()->with('success', '¡Gracias por tu mensaje! Te responderemos a la brevedad.');
+        } catch (\Exception $e) {
+            Log::error('Error al enviar email de contacto: ' . $e->getMessage());
+            return redirect()->back()->with('error', 'Hubo un error al enviar tu mensaje. Por favor, intenta nuevamente más tarde.');
+        }
     }
 }

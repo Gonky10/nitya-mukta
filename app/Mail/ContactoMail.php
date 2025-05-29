@@ -25,7 +25,7 @@ class ContactoMail extends Mailable
      */
     public function build()
     {
-        return $this->subject('Nuevo mensaje de contacto - Nitya Mukta')
+        return $this->subject('Nuevo mensaje de contacto - Escuela Holística Nitya Mukta')
             ->view('emails.contacto');
     }
 }

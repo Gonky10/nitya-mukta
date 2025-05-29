@@ -3,31 +3,29 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Nuevo mensaje de contacto</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
             color: #333;
-        }
-
-        .container {
             max-width: 600px;
             margin: 0 auto;
             padding: 20px;
         }
 
         .header {
-            background-color: #f8f9fa;
+            background-color: #4a5568;
+            color: white;
             padding: 20px;
             text-align: center;
-            margin-bottom: 20px;
+            border-radius: 5px 5px 0 0;
         }
 
         .content {
-            background-color: #ffffff;
+            background-color: #f8f9fa;
             padding: 20px;
-            border: 1px solid #dee2e6;
+            border: 1px solid #e2e8f0;
+            border-radius: 0 0 5px 5px;
         }
 
         .field {
@@ -36,42 +34,54 @@
 
         .label {
             font-weight: bold;
-            color: #495057;
+            color: #4a5568;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 12px;
+            color: #718096;
         }
     </style>
 </head>
 
 <body>
-    <div class="container">
-        <div class="header">
-            <h2>Nuevo mensaje de contacto</h2>
+    <div class="header">
+        <h1>Nuevo Mensaje de Contacto</h1>
+    </div>
+
+    <div class="content">
+        <div class="field">
+            <span class="label">Nombre:</span>
+            <p>{{ $datos['nombre'] }}</p>
         </div>
-        <div class="content">
-            <div class="field">
-                <span class="label">Nombre:</span>
-                <p>{{ $datos['nombre'] }}</p>
-            </div>
 
-            <div class="field">
-                <span class="label">Email:</span>
-                <p>{{ $datos['email'] }}</p>
-            </div>
+        <div class="field">
+            <span class="label">Email:</span>
+            <p>{{ $datos['email'] }}</p>
+        </div>
 
+        @if (isset($datos['telefono']) && $datos['telefono'])
             <div class="field">
                 <span class="label">Teléfono:</span>
-                <p>{{ $datos['telefono'] ?? 'No especificado' }}</p>
+                <p>{{ $datos['telefono'] }}</p>
             </div>
+        @endif
 
-            <div class="field">
-                <span class="label">Servicio de interés:</span>
-                <p>{{ $datos['servicio'] }}</p>
-            </div>
-
-            <div class="field">
-                <span class="label">Mensaje:</span>
-                <p>{{ $datos['mensaje'] }}</p>
-            </div>
+        <div class="field">
+            <span class="label">Servicio de Interés:</span>
+            <p>{{ ucfirst($datos['servicio']) }}</p>
         </div>
+
+        <div class="field">
+            <span class="label">Mensaje:</span>
+            <p>{{ $datos['mensaje'] }}</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Este mensaje fue enviado desde el formulario de contacto de la Escuela Holística Nitya Mukta</p>
     </div>
 </body>
 
