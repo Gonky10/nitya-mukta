@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('image');
             $table->json('benefits')->nullable();
             $table->json('gallery')->nullable();
+            $table->json('videos')->nullable();
             $table->json('testimonials')->nullable();
             $table->decimal('price', 10, 2)->nullable();
             $table->boolean('active')->default(true);

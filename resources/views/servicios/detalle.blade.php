@@ -64,13 +64,66 @@
                 <!-- Sidebar -->
                 <div class="lg:col-span-1">
                     <!-- Galería -->
-                    @if (count($service->gallery) > 0)
-                        <div class="bg-secondary bg-opacity-10 p-6 rounded-lg mb-8">
-                            <h3 class="text-xl font-bold mb-4 text-primary">Galería</h3>
-                            <div class="grid grid-cols-2 gap-4">
+                    <div class="bg-secondary bg-opacity-10 p-6 rounded-lg mb-8" x-data="{ open: false, currentImage: null }">
+                        <h3 class="text-xl font-bold mb-4 text-primary">Galería</h3>
+                        <div class="grid grid-cols-2 gap-4">
+                            @if (count($service->gallery) > 0)
                                 @foreach ($service->gallery as $image)
-                                    <div class="aspect-w-1 aspect-h-1">
-                                        <img src="{{ asset($image) }}" alt="Galería" class="object-cover rounded-lg">
+                                    <div class="aspect-w-1 aspect-h-1 cursor-pointer"
+                                        @click="currentImage = '{{ asset($image) }}'; open = true">
+                                        <img src="{{ asset($image) }}" alt="Galería"
+                                            class="object-cover rounded-lg hover:opacity-90 transition-opacity">
+                                    </div>
+                                @endforeach
+                            @else
+                                <div class="aspect-w-1 aspect-h-1 cursor-pointer"
+                                    @click="currentImage = '{{ asset('img/centro9.png') }}'; open = true">
+                                    <img src="{{ asset('img/centro9.png') }}" alt="Galería"
+                                        class="object-cover rounded-lg hover:opacity-90 transition-opacity">
+                                </div>
+                                <div class="aspect-w-1 aspect-h-1 cursor-pointer"
+                                    @click="currentImage = '{{ asset('img/centro10.png') }}'; open = true">
+                                    <img src="{{ asset('img/centro10.png') }}" alt="Galería"
+                                        class="object-cover rounded-lg hover:opacity-90 transition-opacity">
+                                </div>
+                            @endif
+                        </div>
+
+                        <!-- Modal -->
+                        <div x-show="open" x-cloak class="fixed inset-0 z-50 overflow-y-auto"
+                            x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0"
+                            x-transition:enter-end="opacity-100" x-transition:leave="transition ease-in duration-200"
+                            x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0">
+                            <!-- Overlay -->
+                            <div class="fixed inset-0 bg-black bg-opacity-75" @click="open = false"></div>
+
+                            <!-- Modal content -->
+                            <div class="relative min-h-screen flex items-center justify-center p-4">
+                                <div class="relative bg-white rounded-lg max-w-4xl w-full">
+                                    <button @click="open = false"
+                                        class="absolute top-4 right-4 text-gray-400 hover:text-gray-500">
+                                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M6 18L18 6M6 6l12 12" />
+                                        </svg>
+                                    </button>
+                                    <img :src="currentImage" alt="Imagen ampliada" class="w-full h-auto rounded-lg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Videos -->
+                    @if (isset($service->videos) && count($service->videos) > 0)
+                        <div class="bg-secondary bg-opacity-10 p-6 rounded-lg mb-8">
+                            <h3 class="text-xl font-bold mb-4 text-primary">Videos</h3>
+                            <div class="space-y-4">
+                                @foreach ($service->videos as $video)
+                                    <div class="aspect-w-16 aspect-h-9">
+                                        <video controls class="w-full h-full rounded-lg">
+                                            <source src="{{ asset($video) }}" type="video/mp4">
+                                            Tu navegador no soporta el elemento de video.
+                                        </video>
                                     </div>
                                 @endforeach
                             </div>
@@ -106,6 +159,10 @@
 
 @push('styles')
     <style>
+        [x-cloak] {
+            display: none !important;
+        }
+
         .prose {
             color: #374151;
         }
@@ -146,4 +203,17 @@
             margin: 1rem 0;
         }
     </style>
+@endpush
+
+@push('scripts')
+    <script>
+        document.addEventListener('alpine:init', () => {
+            Alpine.data('gallery', () => ({
+                selectedImage: null,
+                init() {
+                    this.selectedImage = null;
+                }
+            }))
+        })
+    </script>
 @endpush

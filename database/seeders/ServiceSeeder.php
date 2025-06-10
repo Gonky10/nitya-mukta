@@ -220,6 +220,66 @@ class ServiceSeeder extends Seeder
                 'active' => true
             ],
             [
+                'name' => 'Rito del Linaje Femenino',
+                'slug' => 'rito-linaje-femenino',
+                'subtitle' => 'Sanación y reconexión con tu linaje femenino ancestral',
+                'description' => '<h2>¿Qué es el Rito del Linaje Femenino?</h2>
+                    <p>El Rito del Linaje Femenino es una ceremonia sagrada que nos permite sanar y reconectar con nuestras ancestras, honrando la sabiduría y el poder femenino que corre por nuestras venas. A través de este ritual, nos conectamos con las siete generaciones de mujeres que nos precedieron, sanando heridas ancestrales y fortaleciendo nuestro vínculo con la energía femenina universal.</p>
+
+                    <h2>¿Qué incluye la ceremonia?</h2>
+                    <ul>
+                        <li>Meditación guiada para conectar con tus ancestras</li>
+                        <li>Ritual de sanación del linaje femenino</li>
+                        <li>Ceremonia de reconexión con la energía femenina</li>
+                        <li>Sanación de memorias ancestrales</li>
+                        <li>Integración y cierre ceremonial</li>
+                    </ul>
+
+                    <h2>Beneficios del Rito:</h2>
+                    <ul>
+                        <li>Sanación de heridas ancestrales femeninas</li>
+                        <li>Reconexión con la sabiduría de tus ancestras</li>
+                        <li>Fortaleza en tu identidad femenina</li>
+                        <li>Liberación de patrones heredados</li>
+                        <li>Empoderamiento desde tu esencia femenina</li>
+                        <li>Mayor conexión con tu intuición</li>
+                    </ul>
+
+                    <h2>¿Por qué es importante?</h2>
+                    <p>Nuestras ancestras cargaron con historias, dolores y sabiduría que se transmiten de generación en generación. Al sanar nuestro linaje femenino, no solo nos liberamos a nosotras mismas, sino que también sanamos a nuestras hijas y a las generaciones futuras, creando un nuevo legado de amor, respeto y poder femenino.</p>',
+                'image' => 'img/rito-linaje-femenino/rito1.png',
+                'benefits' => [
+                    'Sanación ancestral',
+                    'Reconexión con la feminidad',
+                    'Liberación de patrones heredados',
+                    'Empoderamiento femenino',
+                    'Conexión con la sabiduría ancestral'
+                ],
+                'gallery' => [
+                    'img/rito-linaje-femenino/rito1.jpeg',
+                    'img/rito-linaje-femenino/rito2.jpeg',
+                    'img/rito-linaje-femenino/rito3.jpeg'
+                ],
+                'videos' => [
+                    'img/rito-linaje-femenino/video/rito01.mp4',
+                    'img/rito-linaje-femenino/video/rito02.mp4'
+                ],
+                'testimonials' => [
+                    [
+                        'nombre' => 'Valentina Rodríguez',
+                        'fecha' => 'Marzo 2024',
+                        'texto' => 'El Rito del Linaje Femenino fue una experiencia profundamente transformadora. Me ayudó a entender y sanar patrones que venían de generaciones atrás, y ahora me siento más conectada con mi esencia femenina.'
+                    ],
+                    [
+                        'nombre' => 'Camila Martínez',
+                        'fecha' => 'Febrero 2024',
+                        'texto' => 'Esta ceremonia me permitió reconectarme con la sabiduría de mis ancestras y sanar heridas que no sabía que cargaba. Me siento más fuerte y empoderada en mi feminidad.'
+                    ]
+                ],
+                'price' => 20000.00,
+                'active' => true
+            ],
+            [
                 'name' => 'Tarjeta Cuántica',
                 'slug' => 'tarjeta-cuantica',
                 'subtitle' => 'Transformación cuántica para tu evolución personal',
@@ -825,7 +885,8 @@ class ServiceSeeder extends Seeder
                 ],
                 'price' => 4000.00,
                 'active' => true
-            ]
+            ],
+
         ];
 
         foreach ($services as $service) {

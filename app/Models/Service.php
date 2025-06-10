@@ -17,6 +17,7 @@ class Service extends Model
         'image',
         'benefits',
         'gallery',
+        'videos',
         'testimonials',
         'price',
         'active'
@@ -25,6 +26,7 @@ class Service extends Model
     protected $casts = [
         'benefits' => 'array',
         'gallery' => 'array',
+        'videos' => 'array',
         'testimonials' => 'array',
         'active' => 'boolean',
         'price' => 'decimal:2'
